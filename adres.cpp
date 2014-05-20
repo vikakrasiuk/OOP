@@ -118,10 +118,16 @@ strcpy(&,housenumber,strlen(housenumber));
 return &;
 }
 
- main()
+ int main()
      {
-      ADRESS Crishchatik;
-      Crishchatik.show();
-      system("PAUSE");
-      return EXIT_SUCCESS;
-      }
+        ADRESS A1;
+ADRESS A2("Shevchenka","Khreschatyk",20);
+A1.show();
+A2.show();
+ADRESS*p=new ADRESS();
+ADRESS("Mozhaiskogo","Krylova",20);
+p -> show();
+system("pause");
+return EXIT_SUCCESS;
+}
+     
