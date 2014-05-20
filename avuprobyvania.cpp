@@ -70,13 +70,16 @@ void test::show_test(void)
    
 }
 
-void main(void)
+int main(int)
 
 { 
       vuprobyvania OOP; 
-      OOP.show_vuprobyvania() ;
-      test zadachi cpp;
-   zadachi_cpp.show_test(); 
-   system("PAUSE");
-   return EXIT_SUCCESS;
+      OOP.show() ;
+      vuprobyvania test("zadachi",7,1);
+      test.show();
+      vuprobyvania*v=new_vuprobyvania;
+      vuprobyvania(cpp,10,1);
+      v->show(); 
+      system("PAUSE");
+      return EXIT_SUCCESS;
 }
