@@ -1,19 +1,31 @@
 #include <iostream.h>
-
 #include <string.h>
+using namespace std;
 
 class vuprobyvania
 
 { 
-public: 
-   vuprobyvania(char *, char *, float); 
-   void show_vuprobyvania(void); 
-private: 
-   char misce [ 50 ]; 
-   char data[50]; 
-   float predmet; 
-};
 
+protected: 
+   char* misce ; 
+   char* data; 
+   float predmet; 
+public: 
+   vuprobyvania();
+   vuprobyvania(char* misce, char* data, float predmet); 
+   vuprobyvania(const vuprobyvania&)
+};
+ 
+ ~vuprobyvania();
+ char* Getmisce();
+ char * Getdata();
+ float Getpredmet() const;
+ void Setmisce(char*);
+ void Setdata(char*);
+ void Setpredmet(float);
+ void Set(char*,char*,float);
+ void Show();
+ };
 vuprobyvania::vuprobyvania(char *misce, char *data,float predmet)
 
 { 
